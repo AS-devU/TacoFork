@@ -171,3 +171,26 @@
         Blunt: 2
   - type: Shovel
     speedModifier: 0.05 # nah
+
+  - type: entity
+    parent: UtensilBase
+    id: SpoonLarge
+    name: larger-than-average dining utensil
+    descrption: Only a spoonful.
+    components:
+    - type: Tag
+      tags:
+      - Metal
+    - type: Sprite
+      state: larger-than-average_dining_utensil
+    - type: Utensil
+    types:
+    - Spoon
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 14
+  - type: Shovel
+    speedModifier: 1
